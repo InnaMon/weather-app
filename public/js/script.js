@@ -12,7 +12,11 @@ msgTwo.textContent = '';
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault();
     const location = search.value;
+    
     msgOne.textContent = 'Loading...';
+    msgTwo.textContent = '';
+    img.src = '';
+
     fetch(`http://localhost:3000/weather?address=${location}`)
         .then((response) => {
             response.json().then((data) => {

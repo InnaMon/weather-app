@@ -8,17 +8,26 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    background-image: url("../img/let-there-be-sun.png");
+    background-color: #cccccc;
 }
 
 .main-content {
     flex-grow: 1;
+    background-color: white;
+    padding: 16px;
+    margin-top: 20px;
+    border-radius: 10px;
+    opacity: .8;
 }
 
 footer {
     color: #888;
-    border-top: 1px solid #eee;
+    border-top: 3px solid #eee;
     margin-top: 16px;
-    padding: 16px 0;
+    padding: 16px;
+    background-color: white;
 }
 
 header {
